@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ez5VgAXJVo7IVH5OY6H5mVldRS6p41lOmNOFXdLc5FSg9Is/6FLS0Z3u2II6JdU/" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      margin-top: 56px; 
+    }
+
+    .navbar {
+      background-color: #343a40;
+    }
+
+    .navbar a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .portfolio-section {
+      padding: 50px 0;
+      background-color: #343a40;
+      color: #fff;
+    }
+
+    .section-title {
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    .about-me {
+      display: flex;
+      align-items: center;
+    }
+
+    .profile-image {
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    .profile-text {
+      max-width: 600px;
+      margin-left: 10;
+    }
+
+    .carousel-item img {
+      border-radius: 10px;
+      max-height: 300px;
+      object-fit: cover;
+    }
+
+    .project-card {
+      border: none;
+      background-color: #495057;
+      color: #fff;
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+
+    .contact-form {
+      background-color: #212529;
+      color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+    }
+  </style>
+  <title>Portfolio</title>
+</head>
+<body>
+
+  
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Sandeep Diluksha Bandara Nilwakka</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about-me">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-me">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="portfolio-section" id="about-me">
+      <div class="row">
+        <div class="col-md-6 about-me">
+          <img src="1.jpeg" alt="Profile Image" class="profile-image" width="200">
+          <div class="profile-text">
+            <h2 class="section-title">About Me</h2>
+            <p>I'm Sandeep Diluksha Bandara Nilwakka from Kandy. Currently, I'm an undergraduate of Computer science from the University of Kelaniya. I'm passionate about ethical hacking, networking and database management. I'm good in time management and team working.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          
+          <div id="photoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"> 
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="3.jpeg" class="d-block w-100" alt="Photo 1">
+              </div>
+              <div class="carousel-item">
+                <img src="2.jpeg" class="d-block w-100" alt="Photo 2">
+              </div>
+              <div class="carousel-item">
+                <img src="photo3.jpg" class="d-block w-100" alt="Photo 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-section" id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card project-card">
+            <img src="project1.jpeg" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Website 1</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card project-card">
+            <img src="project2.jpeg" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Website 2</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card project-card">
+            <img src="project3.jpeg" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">Website 3</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="portfolio-section" id="skills">
+      <h2 class="section-title">Skills</h2>
+      <p>
+        <ul>
+            <li>Microsoft office</li>
+            <li>HTML, CSS, BOOTSTRAP</li>
+            <li>Cisco network</li>
+            <li>Linux operation system</li>
+        </ul>
+      </p>
+    </div>
+
+    
+    <div class="portfolio-section" id="contact-me">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p>Feel free to reach out to me through the form below:</p>
+          <form class="contact-form">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+         
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js
